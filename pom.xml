@@ -158,6 +158,18 @@
     </profile>
   </profiles>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>5.13.4</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <build>
     <pluginManagement>
       <plugins>
@@ -303,8 +315,6 @@
     <!-- NOTE: Rhino is an optional dependency of Batik-Bridge. This version should match
          the version specified by Batik-Bridge. -->
     <open.rhino.version>1.7.14</open.rhino.version>
-
-    <open.junit4.version>4.13.1</open.junit4.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
