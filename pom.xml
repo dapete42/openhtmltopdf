@@ -158,6 +158,18 @@
     </profile>
   </profiles>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${open.junit5.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <build>
     <pluginManagement>
       <plugins>
@@ -304,7 +316,7 @@
          the version specified by Batik-Bridge. -->
     <open.rhino.version>1.7.14</open.rhino.version>
 
-    <open.junit4.version>4.13.1</open.junit4.version>
+    <open.junit5.version>5.13.4</open.junit5.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
